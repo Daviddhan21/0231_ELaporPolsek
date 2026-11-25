@@ -4,13 +4,13 @@ backend/.env
 backend/uploads/*
 !backend/uploads/.gitkeep
 
-# Android Studio / Gradle
-android/.gradle/
-android/build/
-android/app/build/
-android/.idea/
-android/*.iml
-android/local.properties
+# Android Studio / Gradle (Root Project)
+.gradle/
+.idea/
+build/
+app/build/
+*.iml
+local.properties
 
 # OS
 .DS_Store
