@@ -1,0 +1,17 @@
+# Node.js / Backend
+backend/node_modules/
+backend/.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Android Studio / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+android/*.iml
+android/local.properties
+
+# OS
+.DS_Store
+Thumbs.db
