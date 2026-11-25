@@ -57,6 +57,12 @@ Aplikasi mobile berbasis Android untuk layanan pelaporan kejadian darurat dan pe
 ## Weekly Progress Log
 * **Minggu 1 (18 – 22 November 2026):**
   * Penetapan tema proyek **Lingkungan & Sosial** dengan studi kasus **E-Lapor Polsek Prambanan** (`0231_ELaporPolsek`)
+ 
+* **Minggu 2 (23 – 29 November 2026):**
+  * Pembuatan skema basis data MySQL 4 tabel (`users`, `categories`, `reports`, `report_responses`) beserta skrip *idempotent seeder* (`seeder.js`) untuk kategori aduan dan akun resmi Polsek Prambanan.
+  * Implementasi Backend REST API Node.js + Express (`backend/`) dengan autentikasi JWT Multirole (`PELAPOR` & `OFFICER`), validasi batas yurisdiksi Jateng–DIY (`OUT_OF_JURISDICTION`), deteksi duplikat spasial (`< 150m`), *rate limit* maksimal 3 laporan `PENDING` (`HTTP 429`), dan upload bukti foto.
+  * Implementasi modul tindak lanjut petugas (`Officer Response`), upload bukti foto TKP, serta *Timeline Audit Trail* dengan penyamaran identitas pelapor anonim.
+  * Inisialisasi proyek Android Studio Kotlin Jetpack Compose dengan arsitektur MVVM (`app/`), tema Navy Polsek Prambanan (`#1B365D`), konfigurasi `BuildConfig` dual-mode (*Emulator* & *Local Hotspot*), `SessionDataStore`, dan `RetrofitClient`.
   * Penyusunan dan finalisasi dokumen spesifikasi kebutuhan perangkat lunak (**SRS v1.3**) beserta 5 diagram analisis (ERD, RAT, Use Case Diagram, Flow Diagram 6 Fitur, dan Activity Diagram Swimlane)
   * Perancangan skema 4 tabel basis data relasional, validasi poligon batas Jateng–DIY (`TRANSFERRED`), deteksi duplikat spasial, *anti-spam rate limiting* & dasar hukum KUHP/UU ITE, serta antrean sinkronisasi draf *offline*
   * Inisialisasi repositori GitHub dan dokumentasi awal `README.md`.
